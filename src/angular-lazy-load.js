@@ -104,8 +104,6 @@ angular.lazyLoad = function(rootModule, baseUrl) {
       }
     };
 
-    console.log('dang');
-
     loadModules().then(function() {
       angular.module = $module;
 
