@@ -1,0 +1,28 @@
+{
+  "name": "angular-lazy-load",
+  "version": "0.0.1",
+  "homepage": "https://github.com/ericclemmons/angular-lazy-load",
+  "authors": [
+    "Eric Clemmons <eric@smarterspam.com>"
+  ],
+  "description": "Experiment with lazy-loading angular.modules",
+  "main": "index.js",
+  "keywords": [
+    "angular",
+    "module",
+    "lazy",
+    "load"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.6",
+    "angular-ui-router": "~0.2.7"
+  }
+}

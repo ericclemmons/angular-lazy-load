@@ -1,0 +1,44 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>AngularJS Lazy-Loading Demo</title>
+    <style>
+      [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+      display: none !important;
+      }
+    </style>
+  </head>
+  <body ng-app="demo" ng-controller="HomeController">
+    <h1>
+      Angular JS Lazy-Load
+    </h1>
+    <dl>
+      <dt>Status</dt>
+      <dd>
+        <span ng-cloak>Enabled</span><span ng-show>Disabled</span>
+      </dd>
+      <dt>Version</dt>
+      <dd>
+        v{{ version }}
+      </dd>
+      <dt>Message</dt>
+      <dd>
+        {{ message }}
+      </dd>
+    </dl>
+
+    <hr>
+
+    <!-- Dependencies -->
+    <script src="../bower_components/angular/angular.js"></script>
+
+    <!-- Lazy-loading shim -->
+    <script src="../src/angular-lazy-load.js"></script>
+
+    <!-- Other dependencies -->
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+    <script>
+      angular.lazyLoad('demo', 'scripts');
+    </script>
+</html>
